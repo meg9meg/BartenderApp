@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+$main-color: #A79C98;
+$page-color: #D0C7C2;
+$dark-color: #451E23;
+$special-font: 'pt sans', 'roboto', 'arial', 'sans-serif';
+$default-font: 'arial', 'sans serif';
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: $page-color;
+    font-family: $default-font;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+
+    max-width: 80%; //1000px
+    min-height: 100vh;
+    margin: 0 auto;
+    color: white;
+    background-color: $main-color;
+}
+
+.navigation {
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    position: relative;
+    &__img {
+        //DO POPRAWY
+        width: 100%;
+        height: 100%;
+    }
+    &__hello {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: $special-font;
+    }
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    background-color: $dark-color;
+    width: 100%;
+    height: 15vh;
+    &__chears {
+        font-family: $special-font;
+        text-align: center;
+        width: 100%;
+    }
+    &__name {
+        width: 100%;
+        &__input {
+            width: 50%;
+            max-height: 40px;
+            min-height: 30px;
+            margin: 10px 10px;
+            letter-spacing: 2px;
+            border: 2px solid black;
+            background-color: white;
+            &:focus {
+                box-shadow: 0 0 2px 1px black;
+                font-weight: bold;
+            }
+        }
+        &__btn {
+            padding: 0 10px;
+            max-height: 40px;
+            min-height: 30px;
+            border: 2px solid black;
+            background-color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+    &__alphabet {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &__letter {
+            font-size: 15px;
+            &:hover {
+                color: $main-color;
+                cursor: pointer;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+.drinks {
+    min-height: 55vh;
+    width: 100%;
+    &__zero {
+        display: none;
+    }
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+}
