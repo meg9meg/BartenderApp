@@ -97,7 +97,7 @@ html {
     &__alphabet {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         &__letter {
             font-size: 15px;
             &:hover {
@@ -118,6 +118,13 @@ html {
 }
 
 .footer {
+    background-color: $dark-color;
+    flex-basis: 100%;
     height: 10vh;
-    width: 100%;
+    text-align: center;
+    padding: 15px 25px;
+    &__quote {
+        font-size: 1rem;
+    }
+
 }
