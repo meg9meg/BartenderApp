@@ -23,7 +23,6 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: flex-start;
-
     max-width: 80%; //1000px
     min-height: 100vh;
     margin: 0 auto;
@@ -52,68 +51,102 @@ html {
 
 .search {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
+    justify-content: space-between;
     background-color: $dark-color;
     width: 100%;
-    height: 15vh;
+    height: 50px;
+    &__icon {
+        flex-basis: 40px;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 14px;
+    }
     &__chears {
         font-family: $special-font;
         text-align: center;
-        width: 100%;
+        margin: 10px 10px;
+        font-size: 18px;
     }
-    &__name {
-        width: 100%;
-        &__input {
-            width: 50%;
-            max-height: 40px;
-            min-height: 30px;
-            margin: 10px 10px;
-            letter-spacing: 2px;
-            border: 2px solid black;
-            background-color: white;
-            &:focus {
-                box-shadow: 0 0 2px 1px black;
-                font-weight: bold;
-            }
+    &__input {
+        width: 30%;
+        max-height: 40px;
+        min-height: 30px;
+        margin: 10px 10px;
+        letter-spacing: 2px;
+        border: 2px solid black;
+        background-color: white;
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 2px 1px black;
+            font-weight: bold;
         }
-        &__btn {
-            padding: 0 10px;
-            max-height: 40px;
-            min-height: 30px;
-            border: 2px solid black;
-            background-color: white;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+    }
+}
+
+.main-section {
+    width: 100%;
+    display: flex;
+}
+
+.dictionary {
+    flex-basis: 40px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid $dark-color;
+    &__letter {
+        box-sizing: border-box;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 8px;
+        /*&:nth-last-child(2) {
+            margin-bottom: 8px;
+        }*/
+        &:hover {
+            background-color: $dark-color;
             cursor: pointer;
-            transition: 0.4s;
-            &:hover {
-                background-color: black;
-                color: white;
-            }
+            transition: 0.8s;
         }
     }
-    &__alphabet {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        &__letter {
-            font-size: 15px;
-            &:hover {
-                color: $main-color;
-                cursor: pointer;
-                transition: 0.4s;
-            }
-        }
+    &__icon {
+        align-self:center;
+        bottom: 0px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 }
 
 .drinks {
     min-height: 55vh;
-    width: 100%;
-    &__zero {
-        display: none;
+    margin-top: 50px;
+    flex-basis: calc(100% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &__no-drinks {
+        align-self: center;
+        text-align: center;
+    }
+    &__drink {
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        &__name {
+            align-self: center;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+        &__image {
+            align-self: center;
+            order: -1;
+            padding: 20px;
+            width: 80%;
+            height: 300px;
+            opacity: 0.9;
+        }
     }
 }
 

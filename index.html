@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3710696c33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Master Home Bartender</title>
 </head>
@@ -15,53 +16,55 @@
         </nav>
         <!--search section-->
         <div class="search">
-            <h3 class="search__chears">Find your drink - just start typing!</h3>
-            <form action="" class="search__name">
-                <input type="text" class="search__name__input" placeholder="Find yousr drink for tonight!">
-                <button class="search__name__btn">Search</button>
-            </form>
-            <h3 class="search__chears">Find drink by letter!</h3>
-            <div class="search__alphabet">
-                <p class="search__alphabet__letter">A</p>
-                <p class="search__alphabet__letter">B</p>
-                <p class="search__alphabet__letter">C</p>
-                <p class="search__alphabet__letter">D</p>
-                <p class="search__alphabet__letter">E</p>
-                <p class="search__alphabet__letter">F</p>
-                <p class="search__alphabet__letter">G</p>
-                <p class="search__alphabet__letter">H</p>
-                <p class="search__alphabet__letter">I</p>
-                <p class="search__alphabet__letter">J</p>
-                <p class="search__alphabet__letter">K</p>
-                <p class="search__alphabet__letter">L</p>
-                <p class="search__alphabet__letter">M</p>
-                <p class="search__alphabet__letter">N</p>
-                <p class="search__alphabet__letter">O</p>
-                <p class="search__alphabet__letter">P</p>
-                <p class="search__alphabet__letter">Q</p>
-                <p class="search__alphabet__letter">R</p>
-                <p class="search__alphabet__letter">S</p>
-                <p class="search__alphabet__letter">T</p>
-                <p class="search__alphabet__letter">U</p>
-                <p class="search__alphabet__letter">V</p>
-                <p class="search__alphabet__letter">W</p>
-                <p class="search__alphabet__letter">X</p>
-                <p class="search__alphabet__letter">Y</p>
-                <p class="search__alphabet__letter">Z</p>
-            </div>
+            <i class="fas fa-glass-cheers search__icon"></i>
+            <h3 class="search__chears">Find your drink by letter or just start typing!</h3>
+            <input type="text" class="search__input" placeholder=" Let's party!">
+            <!--<h3 class="search__chears">Find drink by letter!</h3>-->
         </div>
+        <div class="main-section">
+            <div class="dictionary">
+                <p class="dictionary__letter">A</p>
+                <p class="dictionary__letter">B</p>
+                <p class="dictionary__letter">C</p>
+                <p class="dictionary__letter">D</p>
+                <p class="dictionary__letter">E</p>
+                <p class="dictionary__letter">F</p>
+                <p class="dictionary__letter">G</p>
+                <p class="dictionary__letter">H</p>
+                <p class="dictionary__letter">I</p>
+                <p class="dictionary__letter">J</p>
+                <p class="dictionary__letter">K</p>
+                <p class="dictionary__letter">L</p>
+                <p class="dictionary__letter">M</p>
+                <p class="dictionary__letter">N</p>
+                <p class="dictionary__letter">O</p>
+                <p class="dictionary__letter">P</p>
+                <p class="dictionary__letter">Q</p>
+                <p class="dictionary__letter">R</p>
+                <p class="dictionary__letter">S</p>
+                <p class="dictionary__letter">T</p>
+                <p class="dictionary__letter">U</p>
+                <p class="dictionary__letter">V</p>
+                <p class="dictionary__letter">W</p>
+                <p class="dictionary__letter">X</p>
+                <p class="dictionary__letter">Y</p>
+                <p class="dictionary__letter">Z</p>
+                <i class="fas fa-arrow-up dictionary__icon"></i>
+        </div>
+            
         <div class="drinks">
-            <h2 class="drinks__zero">We don't find drink you requested :(</h2>
             <!--tutaj zwrotka  API-->
         </div>
         <div class="details">
             <!--tutaj zwrotka  API odnośnie wybranego drinka-->
+        </div>
         </div>
         <footer class="footer">
            <h2 class="footer__quote">Have fun and come back to us before your next party or date to check out new recepies!</h2>
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script src="script.js"></script>
 </body>
