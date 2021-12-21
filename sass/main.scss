@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
 
 $main-color: #A79C98;
 $page-color: #D0C7C2;
 $dark-color: #451E23;
-$special-font: 'pt sans', 'roboto', 'arial', 'sans-serif';
+$special-font: 'Oooh Baby', 'sans-serif';
+$main-font: 'arial';
 $default-font: 'arial', 'sans serif';
 
 * {
@@ -32,20 +34,16 @@ html {
 
 .navigation {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     text-align: center;
     position: relative;
-    &__img {
-        //DO POPRAWY
-        width: 100%;
-        height: 100%;
-    }
     &__hello {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: $special-font;
+        font-size: 2rem;
     }
 }
 
@@ -63,10 +61,10 @@ html {
         margin-top: 14px;
     }
     &__chears {
-        font-family: $special-font;
-        text-align: center;
+        font-family: $default-font;
         margin: 10px 10px;
-        font-size: 18px;
+        font-size: 1rem;
+        flex-grow: 1;
     }
     &__input {
         width: 30%;
@@ -148,6 +146,57 @@ html {
             opacity: 0.9;
         }
     }
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 40px;
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    z-index: 2;
+    &__name {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $special-font;
+        flex-grow: 3;
+        font-size: 2rem;
+    }
+    &__close-btn {
+        cursor: pointer;
+    }
+    &__title {
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    &__prep {
+        width: 100%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.fullscreen-container {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background: rgba(90, 90, 90, 0.5);
 }
 
 .footer {

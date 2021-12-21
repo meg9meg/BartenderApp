@@ -12,7 +12,6 @@
     <div class="wrapper">
         <nav class="navigation">
             <h1 class="navigation__hello">Master Home Bartender</h1>
-            <img class = "navigation__img" src="assets/barfloor.jpg" alt="">
         </nav>
         <!--search section-->
         <div class="search">
@@ -55,13 +54,25 @@
         <div class="drinks">
             <!--tutaj zwrotka  API-->
         </div>
-        <div class="details">
-            <!--tutaj zwrotka  API odnośnie wybranego drinka-->
-        </div>
         </div>
         <footer class="footer">
            <h2 class="footer__quote">Have fun and come back to us before your next party or date to check out new recepies!</h2>
         </footer>
+    </div>
+    <div class="fullscreen-container hidden">
+        <div class="details hidden">
+            <!--tutaj zwrotka  API odnośnie wybranego drinka-->
+            <h2 class="details__name"></h2>
+            <i class="fas fa-times details__close-btn"></i>
+            <p class="details__title">Ingredients</p>
+            <div class="details__ingredients">
+                <!--tutaj lista skladników z API-->
+            </div>
+            <p class="details__title">How to prepare</p>
+            <div class="details__prep">
+                <!--tutaj sposob przygotowania z API-->
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
