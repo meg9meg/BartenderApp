@@ -234,9 +234,16 @@ html {
       -ms-flex-order: -1;
           order: -1;
   padding: 20px;
-  width: 80%;
-  height: 30vh;
+  width: 350px;
+  height: 350px;
   opacity: 0.9;
+}
+
+@media screen and (max-width: 500px) {
+  .drinks__drink__image {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .details {
