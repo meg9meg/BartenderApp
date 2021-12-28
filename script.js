@@ -11,6 +11,8 @@ const drinkIngredients = document.querySelector('.details__ingredients');
 const drinkPrep = document.querySelector('.details__prep');
 const closeBtn = document.querySelector('.details__close-btn');
 
+const arrow = document.querySelector('.fa-arrow-up');
+
 const API_LINK = "https://thecocktaildb.com/api/json/v1/1/search.php?f=";
 const API_BY_NAME = "https://thecocktaildb.com/api/json/v1/1/search.php?s=";
 const API_BY_ID = "https://thecocktaildb.com/api/json/v1/1/lookup.php?i=";
@@ -122,6 +124,27 @@ alphabethLetter.forEach(item => {
 inputDrinkName.addEventListener("input", searchByName);
 closeBtn.addEventListener("click", closeDetails);
 
+
+//-------------onload settings-----------
 window.onload = function(){
     inputDrinkName.value = "";
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+//-------------navigation----------------
+arrow.addEventListener('click', () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    arrow.style.display = "inline-block";
+  } else {
+    arrow.style.display = "none";
+  }
 }

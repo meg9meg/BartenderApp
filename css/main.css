@@ -32,6 +32,12 @@ html {
   background-color: #A79C98;
 }
 
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: 100%;
+  }
+}
+
 .navigation {
   width: 100%;
   height: 10vh;
@@ -46,7 +52,19 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "Oooh Baby", "sans-serif";
-  font-size: 2rem;
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .navigation__hello {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation__hello {
+    font-size: 1.4rem;
+  }
 }
 
 .search {
@@ -76,10 +94,22 @@ html {
 .search__chears {
   font-family: "arial", "sans serif";
   margin: 10px 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .search__chears {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search__chears {
+    font-size: 0.7rem;
+  }
 }
 
 .search__input {
@@ -117,6 +147,11 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   border-right: 2px solid #451E23;
+  /*&__icon {
+        align-self: center;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }*/
 }
 
 .dictionary__letter {
@@ -135,15 +170,6 @@ html {
   cursor: pointer;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-}
-
-.dictionary__icon {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  bottom: 0px;
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 .drinks {
@@ -186,6 +212,20 @@ html {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 1000px) {
+  .drinks__drink {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .drinks__drink {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+
 .drinks__drink__name {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -203,7 +243,7 @@ html {
           order: -1;
   padding: 20px;
   width: 80%;
-  height: 300px;
+  height: 30vh;
   opacity: 0.9;
 }
 
@@ -229,6 +269,12 @@ html {
           box-shadow: 0 0 10px black;
   border-radius: 5px;
   z-index: 2;
+}
+
+@media screen and (max-width: 800px) {
+  .details {
+    width: 80vw;
+  }
 }
 
 .details__name {
@@ -283,5 +329,19 @@ html {
 
 .footer__quote {
   font-size: 1rem;
+}
+
+.fa-arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  background-color: #887575;
+  display: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 2px #888;
+          box-shadow: 0 0 2px #888;
+  padding: 0.3em 0.3em;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

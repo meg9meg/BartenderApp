@@ -30,6 +30,9 @@ html {
     margin: 0 auto;
     color: white;
     background-color: $main-color;
+    @media screen and (max-width: 800px) {
+        max-width: 100%; 
+    }
 }
 
 .navigation {
@@ -43,7 +46,13 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: $special-font;
-        font-size: 2rem;
+        font-size: 2.2rem;
+        @media screen and (max-width: 1000px) {
+            font-size: 1.8rem;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -63,8 +72,14 @@ html {
     &__chears {
         font-family: $default-font;
         margin: 10px 10px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         flex-grow: 1;
+        @media screen and (max-width: 1000px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 0.7rem;
+        }
     }
     &__input {
         width: 30%;
@@ -106,12 +121,11 @@ html {
             transition: 0.8s;
         }
     }
-    &__icon {
-        align-self:center;
-        bottom: 0px;
+    /*&__icon {
+        align-self: center;
         margin-top: 8px;
         margin-bottom: 8px;
-    }
+    }*/
 }
 
 .drinks {
@@ -132,6 +146,12 @@ html {
         justify-content: center;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 25px;
+        @media screen and (max-width: 1000px) {
+            flex-basis: 40%;
+        }
+        @media screen and (max-width: 600px) {
+            flex-basis: 80%;
+        }
         &__name {
             align-self: center;
             font-size: 18px;
@@ -142,7 +162,7 @@ html {
             order: -1;
             padding: 20px;
             width: 80%;
-            height: 300px;
+            height: 30vh;
             opacity: 0.9;
         }
     }
@@ -162,6 +182,9 @@ html {
     box-shadow: 0 0 10px black;
     border-radius: 5px;
     z-index: 2;
+    @media screen and (max-width: 800px) {
+        width: 80vw;
+    }
     &__name {
         text-align: center;
         text-transform: uppercase;
@@ -209,4 +232,17 @@ html {
         font-size: 1rem;
     }
 
+}
+
+.fa-arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    background-color: rgb(136, 117, 117);
+    display: none;
+    border-radius: 30px;
+    box-shadow: 0 0 2px #888;
+    padding: 0.3em 0.3em;
+    cursor: pointer;
 }
