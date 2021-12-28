@@ -147,11 +147,6 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   border-right: 2px solid #451E23;
-  /*&__icon {
-        align-self: center;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }*/
 }
 
 .dictionary__letter {
@@ -160,9 +155,6 @@ html {
   font-size: 18px;
   text-align: center;
   margin-top: 8px;
-  /*&:nth-last-child(2) {
-            margin-bottom: 8px;
-        }*/
 }
 
 .dictionary__letter:hover {

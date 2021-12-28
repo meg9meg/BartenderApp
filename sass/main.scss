@@ -25,7 +25,7 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: flex-start;
-    max-width: 80%; //1000px
+    max-width: 80%; 
     min-height: 100vh;
     margin: 0 auto;
     color: white;
@@ -112,20 +112,12 @@ html {
         font-size: 18px;
         text-align: center;
         margin-top: 8px;
-        /*&:nth-last-child(2) {
-            margin-bottom: 8px;
-        }*/
         &:hover {
             background-color: $dark-color;
             cursor: pointer;
             transition: 0.8s;
         }
     }
-    /*&__icon {
-        align-self: center;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }*/
 }
 
 .drinks {
