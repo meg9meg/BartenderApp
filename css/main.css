@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Esteban&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +11,8 @@
 }
 
 html {
-  background-color: #D0C7C2;
-  font-family: "arial", "sans serif";
+  background-color: #FAF9F9;
+  font-family: "Esteban", serif;
 }
 
 .wrapper {
@@ -28,8 +30,8 @@ html {
   max-width: 80%;
   min-height: 100vh;
   margin: 0 auto;
-  color: white;
-  background-color: #A79C98;
+  color: #FAF9F9;
+  background-color: #4A4E69;
 }
 
 @media screen and (max-width: 800px) {
@@ -57,13 +59,13 @@ html {
 
 @media screen and (max-width: 1000px) {
   .navigation__hello {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .navigation__hello {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -78,7 +80,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #451E23;
+  background-color: #89B0AE;
   width: 100%;
   height: 50px;
 }
@@ -92,7 +94,8 @@ html {
 }
 
 .search__chears {
-  font-family: "arial", "sans serif";
+  font-family: "Esteban", serif;
+  color: #4A4E69;
   margin: 10px 10px;
   font-size: 1.2rem;
   -webkit-box-flex: 1;
@@ -108,7 +111,8 @@ html {
 
 @media screen and (max-width: 600px) {
   .search__chears {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
 
@@ -146,7 +150,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-right: 2px solid #451E23;
+  border-right: 2px solid #89B0AE;
+  font-family: "Montserrat", "sans serif";
 }
 
 .dictionary__letter {
@@ -158,7 +163,7 @@ html {
 }
 
 .dictionary__letter:hover {
-  background-color: #451E23;
+  background-color: #89B0AE;
   cursor: pointer;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -223,6 +228,7 @@ html {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 18px;
+  font-family: "Montserrat", "sans serif";
   padding: 10px 20px;
 }
 
@@ -263,9 +269,10 @@ html {
           transform: translate(-50%, -50%);
   padding: 40px 40px;
   width: 600px;
-  background-color: #fff;
+  background-color: #FAF9F9;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
+  color: #4A4E69;
   border-radius: 5px;
   z-index: 2;
 }
@@ -318,7 +325,7 @@ html {
 }
 
 .footer {
-  background-color: #451E23;
+  background-color: #89B0AE;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   height: 10vh;
@@ -328,6 +335,7 @@ html {
 
 .footer__quote {
   font-size: 1rem;
+  color: #4A4E69;
 }
 
 .fa-arrow-up {

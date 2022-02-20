@@ -114,6 +114,10 @@ const closeDetails = () => {
     drinkPrep.textContent = "";
 }
 
+document.addEventListener('mouseup', function(e) {
+    if (!drinkDetails.contains(e.target)) closeDetails()
+});
+
 
 alphabethLetter.forEach(item => {
     item.addEventListener('click', () => {

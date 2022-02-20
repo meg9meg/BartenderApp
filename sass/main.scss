@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
 
-$main-color: #A79C98;
-$page-color: #D0C7C2;
-$dark-color: #451E23;
+
+$main-color: #4A4E69;//#037A90;
+$page-color: #FAF9F9; //#D0C7C2;
+$dark-color: #89B0AE; //#451E23;
+$font-color: #FAF9F9;
+$font-color-special: #4A4E69;
 $special-font: 'Oooh Baby', 'sans-serif';
-$main-font: 'arial';
-$default-font: 'arial', 'sans serif';
+$default-font: 'Esteban', serif;
+$main-font: 'Montserrat', 'sans serif';
 
 * {
     margin: 0; 
@@ -28,7 +33,7 @@ html {
     max-width: 80%; 
     min-height: 100vh;
     margin: 0 auto;
-    color: white;
+    color: $font-color;
     background-color: $main-color;
     @media screen and (max-width: 800px) {
         max-width: 100%; 
@@ -48,10 +53,10 @@ html {
         font-family: $special-font;
         font-size: 2.2rem;
         @media screen and (max-width: 1000px) {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
         }
         @media screen and (max-width: 600px) {
-            font-size: 1.4rem;
+            font-size: 1.7rem;
         }
     }
 }
@@ -71,6 +76,7 @@ html {
     }
     &__chears {
         font-family: $default-font;
+        color: $font-color-special;
         margin: 10px 10px;
         font-size: 1.2rem;
         flex-grow: 1;
@@ -78,7 +84,8 @@ html {
             font-size: 1rem;
         }
         @media screen and (max-width: 600px) {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
+            text-align: center;
         }
     }
     &__input {
@@ -107,6 +114,7 @@ html {
     display: flex;
     flex-direction: column;
     border-right: 2px solid $dark-color;
+    font-family: $main-font;
     &__letter {
         box-sizing: border-box;
         font-size: 18px;
@@ -147,6 +155,7 @@ html {
         &__name {
             align-self: center;
             font-size: 18px;
+            font-family: $main-font;
             padding: 10px 20px;
         }
         &__image {
@@ -174,8 +183,9 @@ html {
     transform: translate(-50%, -50%);
     padding: 40px 40px;
     width: 600px;
-    background-color: #fff;
+    background-color: $page-color;
     box-shadow: 0 0 10px black;
+    color: $main-color;
     border-radius: 5px;
     z-index: 2;
     @media screen and (max-width: 800px) {
@@ -226,6 +236,7 @@ html {
     padding: 15px 25px;
     &__quote {
         font-size: 1rem;
+        color: $font-color-special;
     }
 
 }
