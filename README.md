@@ -4,7 +4,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [API](#api)
-* [Setup](#setup)
+* [GithubPages](#githubpages)
 
 ## General info
 
