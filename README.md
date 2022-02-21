@@ -24,6 +24,6 @@ Project is created with:
 
 Project is based on API https://www.thecocktaildb.com/api.php
 
-## Setup
+## GithubPages
 
-To run this project... tba
+You can check my project here: https://meg9meg.github.io/BartenderApp/
